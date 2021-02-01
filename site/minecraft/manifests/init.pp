@@ -18,4 +18,8 @@ class minecraft {
     content => 'eula=true'
     source => 'puppet:///modules/minecraft/minecraft.service',    
   }  
+  service { 'minecraft':
+    ensure => running,
+    enable => true,
+  }
 }
